@@ -1,12 +1,17 @@
 {
   "name": "the-odinproject-project-restautrant-page",
   "version": "1.0.0",
+  "repository": {
+    "url": "git+https://github.com/Medido1/The-OdinProject-Project-Restautrant-page"
+  },
   "description": "This is a solution to the Restaurant page project that is part of the Odin project  Resources",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +21,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "^2.28.0",
+    "gh-pages": "^6.0.0",
     "prettier": "3.0.1",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
